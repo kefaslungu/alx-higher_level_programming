@@ -9,4 +9,4 @@ def inherits_from(obj, a_class):
     a_class: a class
     returns None
     '''
-    return type(obj) != a_class and isinstance(obj, a_class)
+    return type(obj) = a_class and isinstance(obj, a_class)

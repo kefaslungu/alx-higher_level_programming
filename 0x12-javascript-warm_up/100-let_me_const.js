@@ -1,4 +1,4 @@
 #!/usr/bin/node
-// kefaslungu
+// JS Script
 
 myVar = 333;

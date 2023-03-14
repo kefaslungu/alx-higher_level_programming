@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// kefaslungu
+// JS Script
 
 let arr = ['C is fun', 'Python is cool', 'Javascript is amazing'];
 for (let i = 0; i < arr.length; i++) {

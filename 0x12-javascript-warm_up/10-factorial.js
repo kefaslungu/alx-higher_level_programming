@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// kefaslungu
+// JS Script
 
 function factorial (num) {
   if (isNaN(num) || num <= 1) {

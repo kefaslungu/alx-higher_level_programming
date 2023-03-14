@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// kefaslungu
+// JS script
 
 if (process.argv[2]) {
   console.log(process.argv[2]);

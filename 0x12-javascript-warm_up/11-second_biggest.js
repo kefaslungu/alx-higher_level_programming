@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// kefaslungu
+// JS Script
 
 function sortNumber (a, b) {
   return a - b;

@@ -1,10 +1,6 @@
 #!/usr/bin/node
-// JS Script
-
-const num = parseInt(process.argv[2]);
-
-if (num) {
-  console.log('My number: ' + num);
-} else {
+if (isNaN(parseInt(process.argv[2]))) {
   console.log('Not a number');
+} else {
+  console.log('My number: ' + parseInt(process.argv[2]));
 }

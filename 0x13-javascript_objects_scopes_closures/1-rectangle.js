@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// kefaslungu
+// JS Script
 module.exports = class Rectangle {
   constructor (w, h) {
     this.width = w;

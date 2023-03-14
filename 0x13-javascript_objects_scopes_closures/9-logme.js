@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// kefaslungu
+// JS Script
 let n = 0;
 exports.logMe = function (item) {
   console.log(n + ': ' + item);

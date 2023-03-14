@@ -1,7 +1,6 @@
 #!/usr/bin/node
-// JS Script
+let myArray = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-const arr = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
+for (let i = 0, len = myArray.length; i < len; i++) {
+  console.log(myArray[i]);
 }

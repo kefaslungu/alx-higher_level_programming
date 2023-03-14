@@ -1,8 +1,6 @@
 #!/usr/bin/node
-// JS Script
-
-exports.callMeMoby = function (x, theFunction) {
-  for (let i = 0; i < x; i++) {
-    theFunction();
+exports.callMeMoby = function (var1, callback) {
+  for (let i = 0; i < var1; i++) {
+    callback(var1);
   }
 };

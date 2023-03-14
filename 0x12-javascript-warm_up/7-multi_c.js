@@ -1,9 +1,9 @@
 #!/usr/bin/node
-// JS Script
 
-const num = parseInt(process.argv[2]);
-if (num) {
-  for (let i = 0; i < process.argv[2]; i++) {
+let num = process.argv[2];
+
+if (!isNaN(parseInt(process.argv[2]))) {
+  for (let i = 0; i < num; i++) {
     console.log('C is fun');
   }
 } else {

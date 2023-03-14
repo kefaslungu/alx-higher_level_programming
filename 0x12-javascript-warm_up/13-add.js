@@ -1,6 +1,4 @@
 #!/usr/bin/node
-// JS Script
-
-exports.add = function (a, b) {
-  return parseInt(a) + parseInt(b);
+exports.add = function (num1, num2) {
+  return (num1 + num2);
 };

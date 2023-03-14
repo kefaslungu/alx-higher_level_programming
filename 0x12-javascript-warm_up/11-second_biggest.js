@@ -4,11 +4,11 @@
 function sortNumber (a, b) {
   return a - b;
 }
-let argsLen = process.argv.length;
+const argsLen = process.argv.length;
 if (argsLen === 2 || argsLen === 3) {
   console.log('0');
 } else {
-  let arr = [];
+  const arr = [];
   for (let i = 2; i < argsLen; i++) {
     arr.push(process.argv[i]);
   }

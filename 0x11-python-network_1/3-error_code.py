@@ -1,15 +1,19 @@
 #!/usr/bin/python3
-""" 
-Script that takes in a URL, send a request to URL, and dispaly body
+"""Sends a request to a given URL and displays the response body.
+Usage: ./3-error_code.py <URL>
+  - Handles HTTP errors.
 """
+import sys
+import urllib.error
+import urllib.request
 
 
 if __name__ == "__main__":
-    import sys
-    from urllib import request, error
+    url = sys.argv[1]
 
+    request = urllib.request.Request(url)
     try:
-        with request.urlopen(sys.argv[1]) as resp:
-            print(resp.read().decode('UTF-8'))
-    except error.HTTPError as er:
-        print('Error code:', er.code)
+        with urllib.request.urlopen(request) as response:
+            print(response.read().decode("ascii"))
+    except urllib.error.HTTPError as e:
+        print("Error code: {}".format(e.code))

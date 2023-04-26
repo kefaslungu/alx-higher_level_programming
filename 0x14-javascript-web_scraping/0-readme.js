@@ -1,10 +1,13 @@
 #!/usr/bin/node
-// JS Script
-let fs = require('fs');
-fs.readFile(process.argv[2], function (err, contents) {
-  if (!err) {
-    console.log(contents.toString().trim());
+// A script that reads and prints the content of a file
+
+const file = process.argv[2];
+const fs = require('fs');
+
+fs.readFile(file, 'utf8', (error, data) => {
+  if (error) {
+    console.log(error);
   } else {
-    console.log(err);
+    console.log(data);
   }
 });

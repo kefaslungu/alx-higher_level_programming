@@ -1,9 +1,10 @@
 #!/usr/bin/node
-// JS Script
-require('request').get(process.argv[2], function (err, r) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log('code: ' + r.statusCode);
-  }
+// A script that display the status code of a GET request
+
+const args = process.argv;
+let request = require('request');
+request(args[2], function (error, response, body) {
+  if (error) {
+    console.log('error:', error); // Print the error if one occurred
+  } else console.log('code:', response && response.statusCode);
 });
